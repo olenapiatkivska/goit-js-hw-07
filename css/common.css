@@ -49,9 +49,9 @@ ol {
   list-style-type: none;
 }
 
-/* =================== /Common Styles ==================== */
+/* =================== /common styles ==================== */
 
-/* ==================== Task-1 Styles ==================== */
+/* ==================== task-1 styles ==================== */
 #categories {
   display: flex;
   flex-direction: column;
@@ -63,10 +63,38 @@ ol {
 #categories .item {
   display: flex;
   flex-direction: column;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f6f6fe;
 }
-/* ==================== /Task-1 Styles ==================== */
+#categories .item h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+#categories .item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#categories .item li {
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+/* ==================== /task-1 styles ==================== */
 
-/* ==================== Task-2 Styles ==================== */
+/* ==================== task-2 styles ==================== */
 .gallery {
   display: flex;
   max-width: 1128px;
@@ -84,5 +112,194 @@ ol {
   object-fit: cover;
   height: 100%;
 }
-/* ==================== /Task-2 Styles ==================== */
-/* ==================== Task-3 Styles ==================== */
+/* ==================== /task-2 styles ==================== */
+/* ==================== task-3 styles ==================== */
+#name-input {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding: 8px 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+  outline: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#name-input:hover {
+  border: 1px solid #000;
+}
+#name-input h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+/* ==================== /task-3 styles ==================== */
+
+/* ==================== task-4 styles ==================== */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  gap: 8px;
+}
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.login-form label + label {
+  margin-bottom: 8px;
+}
+.login-form label input {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  outline: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.login-form label input:hover {
+  border: 1px solid #000;
+}
+.login-form button {
+  padding: 8px 16px;
+  max-width: 86px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.login-form button:hover,
+.login-form button:focus,
+.login-form button:active {
+  background-color: #6c8cff;
+}
+
+/* ==================== /task-4 styles ==================== */
+
+/* ==================== task-5 styles ==================== */
+.widget {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.widget p {
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.change-color {
+  width: 148px;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.change-color:hover,
+.change-color:focus,
+.change-color:active {
+  background-color: #6c8cff;
+}
+/* ==================== task-5 styles ==================== */
+
+/* ==================== task-6 styles ==================== */
+
+#controls {
+  display: flex;
+  width: 486px;
+  gap: 16px;
+  border-radius: 8px;
+  background-color: #f6f6fe;
+  padding: 32px;
+  margin-bottom: 16px;
+}
+#controls input {
+  width: 150px;
+  border-radius: 8px;
+  border: 1px solid #808080;
+  padding: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  text-align: center;
+  outline: transparent;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#controls input: :hover {
+  border: 1px solid #000;
+}
+#controls button[data-create] {
+  min-width: 120px;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#controls button[data-create]:hover,
+#controls button[data-create]:focus,
+#controls button[data-create]:active {
+  background-color: #6c8cff;
+}
+#controls button[data-destroy] {
+  min-width: 120px;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ff4e4e;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#controls button[data-destroy]:hover,
+#controls button[data-destroy]:focus,
+#controls button[data-destroy]:active {
+  background-color: #ff7070;
+}
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 44px;
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  padding: 32px;
+  width: fit-content;
+}
+/* ==================== /task-6 styles ==================== */
